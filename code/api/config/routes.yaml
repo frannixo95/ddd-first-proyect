@@ -1,0 +1,2 @@
+api:
+  resource: ../src/VideoLibrary/Api/Infrastructure/Routes/routes.yml

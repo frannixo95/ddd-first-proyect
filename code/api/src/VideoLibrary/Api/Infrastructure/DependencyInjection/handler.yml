@@ -1,0 +1,10 @@
+services:
+  api.query.videos.getVideosHandler:
+    class: VideoLibrary\Api\Application\Query\Videos\GetVideosHandler
+    arguments:
+      - '@api.repository.doctrineVideoRepository'
+  api.command.videos.postCreateVideoHandler:
+    class: VideoLibrary\Api\Application\Command\Videos\PostCreateVideoHandler
+    arguments:
+      - '@api.repository.doctrineVideoRepository'
+      - '@api.services.uuidIdStringGenerator'
